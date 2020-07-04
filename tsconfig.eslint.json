@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "strict": true
+  },
+
+  "include": [
+    "src/**/*.d.ts",
+    "src/**/*.json",
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx",
+    "src/**/test-utils/*.ts",
+    "src/**/test-utils/*.tsx"
+  ]
+}

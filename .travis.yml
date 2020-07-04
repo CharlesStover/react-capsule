@@ -1,0 +1,18 @@
+language: node_js
+node_js: 10.15.3
+branches:
+  only: master
+cache: yarn
+install:
+  - yarn
+script:
+  - yarn build
+  - yarn test
+deploy:
+  api_key:
+    secure:
+  email: npmjs@charlesstover.com
+  on:
+    branch: master
+  provider: npm
+  skip_cleanup: true

@@ -1,0 +1,14 @@
+/.git/
+/.idea/
+/.vscode/
+/dist/
+/jest/
+/node_modules/
+/types/
+/*.iml
+/.env
+/.pnp.cjs
+/.pnp.js
+/.tsbuildinfo
+/yarn.lock
+/yarn-error.log
