@@ -6,7 +6,7 @@ cache: yarn
 install:
   - yarn
 script:
-  - yarn build
+  - yarn prepublishOnly
   - yarn test
 deploy:
   api_key:

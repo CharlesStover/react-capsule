@@ -22,7 +22,7 @@
       "jsx": false
     },
     "extraFileExtensions": [".json"],
-    "project": ["./tsconfig.json", "./tsconfig.eslint.json"],
+    "project": "./tsconfig.eslint.json",
     "tsconfigRootDir": "./",
     "useJSXTextNode": true,
     "warnOnUnsupportedTypeScriptVersion": false

@@ -41,11 +41,11 @@
     "target": "ES5"
   },
   "exclude": [
-    ".yarn",
-    "dist",
-    "jest",
-    "node_modules",
-    "types",
+    "/.yarn/",
+    "/dist/",
+    "/jest/",
+    "/node_modules/",
+    "/types/",
     "**/test-utils/*.ts",
     "**/test-utils/*.tsx",
     "**/*.test.ts",

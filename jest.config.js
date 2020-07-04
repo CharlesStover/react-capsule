@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   cacheDirectory: './jest/cache',
   collectCoverage: true,
   collectCoverageFrom: [
@@ -15,9 +15,6 @@ module.exports = {
       lines: 100,
       statements: 100,
     },
-  },
-  moduleNameMapper: {
-    '\\.(?:css|gif|jpg|png|scss)$': '<rootDir>/test-utils/empty.ts',
   },
   resetMocks: true,
   resetModules: true,

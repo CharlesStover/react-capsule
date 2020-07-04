@@ -1,14 +1,16 @@
 {
   "compilerOptions": {
-    "strict": true
+    "allowJs": true
   },
-
+  "exclude": ["/.yarn/", "/dist/", "/jest/", "/node_modules/", "/types/"],
+  "extends": "./tsconfig.json",
   "include": [
-    "src/**/*.d.ts",
-    "src/**/*.json",
-    "src/**/*.test.ts",
-    "src/**/*.test.tsx",
-    "src/**/test-utils/*.ts",
-    "src/**/test-utils/*.tsx"
+    "**/*.cjs",
+    "**/*.d.ts",
+    "**/*.js",
+    "**/*.json",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.yml"
   ]
 }
