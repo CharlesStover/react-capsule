@@ -61,7 +61,7 @@ render lifecycle.
 
 `capsule.state` contains the capsule's current value.
 
-### `susbcribe`
+### `subscribe`
 
 `capsule.subscribe(callback)` will execute the provided callback function
 whenever the state changes. This method returns a function that will unsubscribe
