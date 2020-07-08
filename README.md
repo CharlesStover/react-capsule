@@ -1,7 +1,9 @@
 # React Capsule 💊 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=You%20might%20not%20need%20the%20React%20Context%20API%20for%20your%20global%20state!&url=https://github.com/CharlesStover/react-capsule&via=CharlesStover&hashtags=react,reactjs,javascript,typescript,webdev,webdevelopment) [![version](https://img.shields.io/npm/v/react-capsule.svg)](https://www.npmjs.com/package/react-capsule) [![minzipped size](https://img.shields.io/bundlephobia/minzip/react-capsule.svg)](https://www.npmjs.com/package/react-capsule) [![downloads](https://img.shields.io/npm/dt/react-capsule.svg)](https://www.npmjs.com/package/react-capsule) [![build](https://api.travis-ci.com/CharlesStover/react-capsule.svg)](https://travis-ci.com/CharlesStover/react-capsule/)
 
 React Capsule 💊 is a way to share your global React state between components
-without managing yet another React Context.
+without managing yet another React context.
+
+[![banner](https://user-images.githubusercontent.com/343837/86960994-48518f00-c115-11ea-8309-940f228013f9.png)](https://github.com/CharlesStover/react-capsule)
 
 React Capsule is **simple**, **light-weight**, **easy to use**, and
 **easy to understand**.
