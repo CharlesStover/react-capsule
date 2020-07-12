@@ -15,11 +15,12 @@ export default new Capsule('my value');
 ```
 
 ```jsx
-// Manage a capsule with its useState method.
+// Using capsules with function components.
+import { useCapsule } from 'react-capsule';
 import myCapsule from '...';
 
 export default function MyComponent() {
-  const [value, setValue] = myCapsule.useState(); // 💊
+  const [value, setValue] = useCapsule(myCapsule); // 💊
 
   // Change my capsule's value on click.
   const handleClick = React.useCallback(() => {
@@ -27,6 +28,32 @@ export default function MyComponent() {
   }, [setValue]);
 
   return <button onClick={handleClick}>{value}</button>; // my value
+}
+```
+
+```jsx
+// Using capsules with class components.
+import myCapsule from '...';
+
+export default class MyComponent {
+  // When the component mounts, re-render on state change.
+  componentDidMount() {
+    myCapsule.subscribe(this.forceUpdate);
+  }
+
+  // When the component unmounts, remove the re-render subscription.
+  componentWillUnmount() {
+    myCapsule.unsubscribe(this.forceUpdate);
+  }
+
+  handleClick() {
+    myCapsule.setState('your value');
+  }
+
+  render() {
+    // my value
+    return <button onClick={this.handleClick}>{myCapsule.state}</button>;
+  }
 }
 ```
 

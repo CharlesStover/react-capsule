@@ -1,6 +1,6 @@
 {
   "name": "react-capsule",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Charles Stover <react-capsule@charlesstover.com>",
   "description": "Creates an encapsulated global state",
   "homepage": "https://www.npmjs.com/package/react-capsule",

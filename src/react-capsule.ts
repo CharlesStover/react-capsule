@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from 'react';
-import { useState } from './hooks';
+import { useCapsule } from './hooks';
 
 type VoidFunction = () => void;
 
@@ -52,6 +52,6 @@ export default class ReactCapsule<T> {
       However, this method actually is a hook.
     */
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    return useState(this);
+    return useCapsule(this);
   }
 }

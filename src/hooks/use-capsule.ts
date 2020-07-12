@@ -5,7 +5,7 @@ import { isState } from '../utils';
 
 type VoidFunction = () => void;
 
-export default function useCapsuleState<T>(
+export default function useCapsule<T>(
   capsule: ReactCapsule<T>,
 ): [T, Dispatch<SetStateAction<T>>] {
   const forceUpdate: VoidFunction = useForceUpdate();

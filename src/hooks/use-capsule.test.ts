@@ -4,17 +4,18 @@ import {
   renderHook,
 } from '@testing-library/react-hooks';
 import { Dispatch, SetStateAction } from 'react';
-import Capsule from '..';
-import { useState } from '.';
+import Capsule, { useCapsule } from '..';
 
 const render = <T>(
   initialState: T,
 ): RenderHookResult<void, [T, Dispatch<SetStateAction<T>>]> => {
   const capsule: Capsule<T> = new Capsule(initialState);
-  return renderHook((): [T, Dispatch<SetStateAction<T>>] => useState(capsule));
+  return renderHook((): [T, Dispatch<SetStateAction<T>>] =>
+    useCapsule(capsule),
+  );
 };
 
-describe('useCapsuleState', (): void => {
+describe('useCapsule', (): void => {
   describe('state', (): void => {
     it('should be the state', (): void => {
       const INITIAL_STATE = 'initial state';
