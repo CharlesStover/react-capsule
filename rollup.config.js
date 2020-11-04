@@ -35,6 +35,7 @@ export default [
     output: [
       {
         dir: MAIN_DIR,
+        exports: 'named',
         format: 'cjs',
         sourcemap: IS_DEV,
       },
