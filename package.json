@@ -27,9 +27,9 @@
     "module": "./dist/esm/index.mjs"
   },
   "scripts": {
+    "build": "rollup --config",
     "clean": "rm -rf dist jest node_modules package-lock.json yarn.lock",
     "jest": "jest",
-    "prepublishOnly": "rollup --config",
     "start": "rollup --config --watch",
     "test": "eslint && jest",
     "test-watch": "jest --coverage=false --watch",
