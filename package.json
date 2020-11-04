@@ -1,6 +1,6 @@
 {
   "name": "react-capsule",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Charles Stover <react-capsule@charlesstover.com>",
   "description": "Creates an encapsulated global state",
   "homepage": "https://www.npmjs.com/package/react-capsule",
@@ -69,7 +69,7 @@
     "typescript": "^3.9.6"
   },
   "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   }
 }
